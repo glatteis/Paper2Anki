@@ -40,8 +40,8 @@ def createPDF(pdf):
 
 def create_images():
     current_time_in_millis = str(int(time.time_ns()))
-    zoom_x = 2.0  # horizontal zoom
-    zomm_y = 2.0  # vertical zoom
+    zoom_x = 5.0  # horizontal zoom
+    zomm_y = 5.0  # vertical zoom
     mat = fitz.Matrix(zoom_x, zomm_y)  # zoom factor 2 in each dimension
     doc = fitz.open(TEMP + os.sep + "input.pdf")
     for x in doc:
